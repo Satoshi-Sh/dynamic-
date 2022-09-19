@@ -1,3 +1,97 @@
 body {
     background-color: antiquewhite;
 }
+h1 {
+    text-align:center;
+}
+
+img{
+    height:500px;
+    width:500px;
+    padding:20px;
+    position:absolute;
+}
+
+.gallery {
+  margin-top:40px;
+  margin-left:auto;
+  margin-right: auto;
+  width:540px;
+  height:540px;
+
+  
+  background-color: gainsboro;
+}
+
+.handle{
+    width:540px;
+    height:50px;
+    background-color: gray;
+    margin-left:auto;
+    margin-right: auto;
+    display:flex;
+    align-items: center;
+    font-size:20px;
+    color:gainsboro;
+}
+
+#Back, #Next {
+    width: 50px;
+    display:flex;
+    justify-content: center;
+    
+}
+.button {
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+
+.button:hover{
+    background-color: darkgrey;
+}
+
+.numbers{
+    flex:auto;
+}
+
+.numbers ul {
+    margin:4px;
+    padding:0;
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+}
+
+.number{
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.number:hover {
+    background-color: darkgrey;
+    
+}
+
+
+@keyframes fadeout {
+    0%   {opacity: 0%;}
+    25%  {opacity: 25%;}
+    50%  {opacity: 50%;}
+    100% {opacity: 100%;}
+  }
+
+.fadeout {
+    animation-name:fadeout;
+    animation-duration:1s;
+}
+

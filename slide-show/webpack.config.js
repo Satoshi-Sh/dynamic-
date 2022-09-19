@@ -7,6 +7,11 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
   },
+  resolve: {
+    fallback: {
+      fs: false,
+    },
+  },
   devtool: 'inline-source-map',
   module: {
     rules: [
